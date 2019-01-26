@@ -5,18 +5,18 @@ using UnityEngine;
 public class Player : MonoBehaviour {
 
     private string name;
-    private int HP;
-    private int SP;
+    private int hp;
+    private int sp;
     private int money;
-    private InventoryManager inventoryManager;
+    private Inventory inventory;
 
     public Player(string newName)
     {
         name = newName;
-        HP = 100;
-        SP = 100;
+        hp = 100;
+        sp = 100;
         money = 100;
-        inventoryManager = new InventoryManager();
+        inventory = new Inventory();
     }
 
     public void setName(string newName)
@@ -26,12 +26,12 @@ public class Player : MonoBehaviour {
 
     public void setHP(int newHP)
     {
-        HP = newHP;
+        hp = newHP;
     }
     
     public void setSP(int newSP)
     {
-        SP = newSP;
+        sp = newSP;
     }
     public void setMoney(int newMoney)
     {
@@ -43,11 +43,11 @@ public class Player : MonoBehaviour {
     }
     public int getHP()
     {
-        return HP;
+        return hp;
     }
     public int getSP()
     {
-        return SP;
+        return sp;
     }
     public int getMoney()
     {

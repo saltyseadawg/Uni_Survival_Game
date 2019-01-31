@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour {
-
+public class Player : MonoBehaviour
+{
     private string name;
     private int hp;
     private int sp;
@@ -28,7 +28,7 @@ public class Player : MonoBehaviour {
     {
         hp = newHP;
     }
-    
+
     public void setSP(int newSP)
     {
         sp = newSP;
@@ -53,13 +53,16 @@ public class Player : MonoBehaviour {
     {
         return money;
     }
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
 }
